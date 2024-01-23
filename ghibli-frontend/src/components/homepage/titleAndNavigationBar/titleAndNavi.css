@@ -1,0 +1,25 @@
+.titleAndNaviContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  height: 30px;
+  padding-bottom: 20px;
+}
+
+.titleContainer {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.naviContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.naviContainer > span {
+  font-weight: 600;
+}
