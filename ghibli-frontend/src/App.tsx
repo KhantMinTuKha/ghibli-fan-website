@@ -1,13 +1,15 @@
 import "./App.css";
-import TitleAndNavigationBar from "./components/homepage/titleAndNavigationBar/titleAndNavi";
-import ImageSlider from "./components/homepage/imageSlider/imageSlider";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import HomePage from "./components/homepage/homePage";
 
 function App() {
+  const [ghibliData, setGhibliData] = useState([]);
+
   const fetchData = async () => {
     const response = await fetch("http://localhost:5000/ghibliData");
     const data = await response.json();
-    console.log(data);
+    setGhibliData(data);
+    console.log(ghibliData);
   };
 
   useEffect(() => {
@@ -16,10 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <TitleAndNavigationBar />
-        <ImageSlider />
-      </div>
+      <HomePage ghibliData={ghibliData} />
     </div>
   );
 }

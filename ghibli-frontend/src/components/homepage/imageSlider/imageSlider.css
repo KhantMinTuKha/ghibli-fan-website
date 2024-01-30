@@ -1,3 +1,103 @@
 .imageSliderContainer {
   margin: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSliderInfo {
+  max-width: 500px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.titleContainer > span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.imageSliderInfo > span,
+.imageSliderInfo > div {
+  margin-bottom: 10px;
+}
+
+.imdbRating {
+  font-size: 12px;
+  padding: 3px 10px;
+  background-color: #f6ca2a;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.review {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.genre {
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#Adventure {
+  background-color: #3d4b7a;
+}
+
+#Sci-Fi {
+  background-color: #7d8484;
+}
+
+#Family {
+  background-color: #c66258;
+}
+
+#Fantasy {
+  background-color: #bf80fb;
+}
+
+#Drama {
+  background-color: #d1b54f;
+}
+
+#War {
+  background-color: #9c7f5f;
+  color: #ffff;
+}
+
+#Comedy {
+  background-color: #eeba0b;
+}
+
+#Romance {
+  background-color: #ff928b;
+}
+
+#Action {
+  background-color: #5183af;
+}
+
+#Mystery {
+  background-color: #55d6be;
+}
+
+#Biography {
+  background-color: #4c956c;
+}
+
+.genreContainer > span {
+  color: #ffff;
+}
+
+.MoreInfo {
+  font-size: 14px;
 }

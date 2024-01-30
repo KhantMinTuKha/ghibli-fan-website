@@ -1,0 +1,30 @@
+.popularTodayContainer {
+  height: 400px;
+  background-color: #f4ffd7;
+  margin-top: 50px;
+  position: relative;
+}
+
+.cat {
+  background-image: url("./cat.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  background-size: contain;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  right: 50%;
+}
+
+.popularToday {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.postersContainer {
+  height: 90%;
+  width: 90%;
+}

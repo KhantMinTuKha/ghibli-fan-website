@@ -15,6 +15,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/a3/58/80/a3588014ada17c5d7555a427eada326b.jpg",
     ],
     trailer: "https://www.youtube.com/embed/9O-JGh4e2Mk?si=oA9v3431341mur8_",
+    isPopularToday: false,
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/6b/88/cb/6b88cbedc049f0a7a81db95f515027be.jpg",
     ],
     trailer: "https://www.youtube.com/embed/5lMRfLJGXSM?si=l_muyJsFD_aO31vj",
+    isPopularToday: false,
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/f0/a2/b7/f0a2b71e33dd695fd773ca8046345ed2.jpg",
     ],
     trailer: "https://www.youtube.com/embed/4vPeTSRd580?si=g5VB1BXplUXDaWMs",
+    isPopularToday: false,
   },
   {
     id: 4,
@@ -66,6 +69,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/81/a1/60/81a160b8883f675ceddc554d4aa99557.jpg",
     ],
     trailer: "https://www.youtube.com/embed/HaLISMAGdOE?si=ZJCZZjv_luR5qZEd",
+    isPopularToday: true,
   },
   {
     id: 5,
@@ -83,6 +87,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/93/fd/7a/93fd7a3b17b535bab1352952ff9f9539.jpg",
     ],
     trailer: "https://www.youtube.com/embed/t6-fT0hjTvc?si=QVu8d5wHRxBgnaZw",
+    isPopularToday: true,
   },
   {
     id: 6,
@@ -100,6 +105,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/c6/7c/d0/c67cd01c3754c3996e6c11332df916f1.jpg",
     ],
     trailer: "https://www.youtube.com/embed/5gSKk-wwLsY?si=JhH3QR3ZEe8iew0-",
+    isPopularToday: false,
   },
   {
     id: 7,
@@ -117,6 +123,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/fa/19/42/fa194285b5442c2f33774f1eb66600e1.jpg",
     ],
     trailer: "https://www.youtube.com/embed/3LRyNwYg1f8?si=aBuV4ITL2ct4HywN",
+    isPopularToday: false,
   },
   {
     id: 8,
@@ -129,11 +136,12 @@ const ghibliMovies = [
     poster:
       "https://i.pinimg.com/564x/79/d5/99/79d599050f781151c56a794b44e57683.jpg",
     otherImage: [
-      "https://i.pinimg.com/564x/73/49/76/734976bbb044793d926fb09d92d6b5db.jpg",
+      "https://i.pinimg.com/564x/c8/e7/73/c8e773a01ded705012ceb18ccc3a94ca.jpg",
       "https://i.pinimg.com/564x/26/36/bb/2636bb450ebfb0a61ae3cfa11431023a.jpg",
       "https://i.pinimg.com/564x/2b/ef/c3/2befc3087ce9ca96e55ff5037a0430e4.jpg",
     ],
     trailer: "https://www.youtube.com/embed/tfkHiHjrqa8?si=sVjbptbFmCCak1Pp",
+    isPopularToday: false,
   },
   {
     id: 9,
@@ -151,6 +159,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/0a/de/ef/0adeef85d02579e1bc13a918ee27b755.jpg",
     ],
     trailer: "https://www.youtube.com/embed/_7cowIHjCD4?si=qkVx6n4nto93w9fw",
+    isPopularToday: false,
   },
   {
     id: 10,
@@ -168,6 +177,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/fd/1c/d8/fd1cd8b05c691f25e4f994cd654456cb.jpg",
     ],
     trailer: "https://www.youtube.com/embed/0pVkiod6V0U?si=0cLX2aKdSFxb8_4L",
+    isPopularToday: false,
   },
   {
     id: 11,
@@ -185,6 +195,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/5e/1a/4f/5e1a4fdcd4f2dd410dbd29328f3f2005.jpg",
     ],
     trailer: "https://www.youtube.com/embed/opCxPAwdB6U?si=uAn2Y-E0mdh19eUI",
+    isPopularToday: true,
   },
   {
     id: 12,
@@ -202,6 +213,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/51/17/dc/5117dcb7d4d7c9c763e5736dba26bf22.jpg",
     ],
     trailer: "https://www.youtube.com/embed/1C9ujuCPlnY?si=ttawp_5CvzJRRbVB",
+    isPopularToday: false,
   },
   {
     id: 13,
@@ -219,6 +231,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/4a/95/d6/4a95d623fa16d34cd9363d59424029f7.jpg",
     ],
     trailer: "https://www.youtube.com/embed/ByXuk9QqQkk?si=JwitcDJAe_hqIweQ",
+    isPopularToday: true,
   },
   {
     id: 14,
@@ -236,6 +249,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/85/bc/13/85bc13ac8f0b02371f32d01720adc491.jpg",
     ],
     trailer: "https://www.youtube.com/embed/Gp-H_YOcYTM?si=xc0aDxE8ZcKC586e",
+    isPopularToday: false,
   },
   {
     id: 15,
@@ -253,6 +267,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/fb/44/13/fb44130a38e4218f4e5492ba6c1bc2e6.jpg",
     ],
     trailer: "https://www.youtube.com/embed/iwROgK94zcM?si=LuhIiL0Ts5Twsg29",
+    isPopularToday: true,
   },
   {
     id: 16,
@@ -269,6 +284,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/6f/20/b3/6f20b3460dc2a81e353ee844517594ce.jpg",
     ],
     trailer: "https://www.youtube.com/embed/8hxYx3Jq3kI?si=liNN--JtmNUTTqP-",
+    isPopularToday: false,
   },
   {
     id: 17,
@@ -286,6 +302,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/99/a8/24/99a8245aa0baabb2d74e920651d028d6.jpg",
     ],
     trailer: "https://www.youtube.com/embed/CsR3KVgBzSM?si=iPYJpibd-N1cx6rA",
+    isPopularToday: true,
   },
   {
     id: 18,
@@ -303,6 +320,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/0d/2f/ed/0d2fedaf057bc204e1a70beacb8e56f4.jpg",
     ],
     trailer: "https://www.youtube.com/embed/VlMe7PavaRQ?si=zNda2lDxkxUsAr8F",
+    isPopularToday: false,
   },
   {
     id: 19,
@@ -320,6 +338,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/d1/40/63/d140630317bda4c2cdded845f0dfb74f.jpg",
     ],
     trailer: "https://www.youtube.com/embed/9nzpk_Br6yo?si=ZLUZYAF9dWGEvNlE",
+    isPopularToday: false,
   },
   {
     id: 20,
@@ -332,11 +351,12 @@ const ghibliMovies = [
     poster:
       "https://i.pinimg.com/564x/04/9e/df/049edf8bcdfd8f00856003e50d8fa67a.jpg",
     otherImage: [
-      "https://i.pinimg.com/564x/6c/69/67/6c6967c3f2235809864a287ecdd200d3.jpg",
       "https://i.pinimg.com/564x/0f/cf/48/0fcf483d1fe5656d47d5336eda923a9d.jpg",
+      "https://i.pinimg.com/564x/6c/69/67/6c6967c3f2235809864a287ecdd200d3.jpg",
       "https://i.pinimg.com/564x/dd/fe/e6/ddfee628a4911f4f78f01b1f22ce92ed.jpg",
     ],
     trailer: "https://www.youtube.com/embed/RzSpDgiF5y8?si=zkLMdUfdy1pNWkwV",
+    isPopularToday: true,
   },
   {
     id: 21,
@@ -354,6 +374,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/69/e1/42/69e14216a78149a8c977f8109e419035.jpg",
     ],
     trailer: "https://www.youtube.com/embed/W71mtorCZDw?si=agHCrOL1igNvYPka",
+    isPopularToday: false,
   },
   {
     id: 22,
@@ -371,6 +392,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/64/8a/c4/648ac4b364c86f3a7018ccbfd7514934.jpg",
     ],
     trailer: "https://www.youtube.com/embed/jjmrxqcQdYg?si=TLFgglJTKqkOlfYc",
+    isPopularToday: false,
   },
   {
     id: 23,
@@ -388,6 +410,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/fa/e3/9d/fae39dae2f3a282335d91b11751b018b.jpg",
     ],
     trailer: "https://www.youtube.com/embed/V--UCVHLzAY?si=Tg10cIkfbUpILWyE",
+    isPopularToday: false,
   },
   {
     id: 24,
@@ -405,6 +428,7 @@ const ghibliMovies = [
       "https://i.pinimg.com/564x/c8/f6/18/c8f618be3d4afcff58cbbf38a1fcfc2e.jpg",
     ],
     trailer: "https://www.youtube.com/embed/YcgvMMJyaQU?si=5RYE6KHcFdkhTyW9",
+    isPopularToday: true,
   },
 ];
 
