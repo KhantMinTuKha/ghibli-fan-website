@@ -1,5 +1,5 @@
 .popularTodayContainer {
-  height: 400px;
+  height: 300px;
   background-color: #f4ffd7;
   margin-top: 50px;
   position: relative;
@@ -25,6 +25,29 @@
 }
 
 .postersContainer {
-  height: 90%;
-  width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postersContainer > span {
+  margin: 0 10px;
+}
+
+.postersContainer > div {
+  font-size: 13px;
+  text-align: left;
+}
+
+.posterTitle {
+  padding: 0 0 0 5px;
+}
+
+.poster {
+  transition: all 0.5s ease-out;
+}
+
+.poster:hover {
+  opacity: 0.7;
 }

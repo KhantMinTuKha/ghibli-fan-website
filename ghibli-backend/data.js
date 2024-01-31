@@ -62,7 +62,7 @@ const ghibliMovies = [
     imdb: "8.1",
     genre: ["Comedy", "Family", "Fantasy"],
     poster:
-      "https://i.pinimg.com/564x/52/7b/6a/527b6ac8319fca08b4cbfaac577cfc44.jpg",
+      "https://i.pinimg.com/564x/87/b1/38/87b138e4c4a0347051cbe787dba00d75.jpg",
     otherImage: [
       "https://i.pinimg.com/564x/02/cb/58/02cb58a8abbf1c5d6eef2fdbc9da0e3b.jpg",
       "https://i.pinimg.com/564x/fb/7b/c8/fb7bc8234a08c261f63f7f982e86dc36.jpg",

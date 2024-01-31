@@ -6,6 +6,7 @@
   cursor: pointer;
   height: 30px;
   padding-bottom: 20px;
+  user-select: none;
 }
 
 .titleContainer {
@@ -22,4 +23,8 @@
 
 .naviContainer > span {
   font-weight: 600;
+}
+
+.naviContainer > span:hover {
+  color: gray;
 }

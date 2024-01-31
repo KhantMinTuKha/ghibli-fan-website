@@ -19,9 +19,17 @@ const PopularToday = ({ ghibliData }: Props) => {
       width: `150px`,
       display: "inline-block",
       backgroundSize: "contain",
+      cursor: "pointer",
+      margin: "0 5px",
     };
-    console.log(data);
-    return <span className="poster" key={nanoid()} style={posterImage}></span>;
+    if (data.isPopularToday === true) {
+      return (
+        <div className="posterParent">
+          <span className="poster" key={nanoid()} style={posterImage}></span>
+          <div className="posterTitle">{data.title}</div>
+        </div>
+      );
+    }
   });
   return (
     <div className="popularTodayContainer">

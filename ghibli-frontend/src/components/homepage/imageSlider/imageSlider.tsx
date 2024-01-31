@@ -17,6 +17,7 @@ export interface Data {
   poster: string;
   otherImage: string[];
   trailer: string;
+  isPopularToday: boolean;
 }
 
 const ImageSlider = ({ ghibliData }: Props) => {
