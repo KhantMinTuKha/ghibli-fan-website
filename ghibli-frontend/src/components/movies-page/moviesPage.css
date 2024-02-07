@@ -1,0 +1,73 @@
+.moviesPageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.moviesPageInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.GhibliLogo {
+  background-image: url("./ghibli-logo.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 90px;
+  background-size: contain;
+}
+
+.moviesSearchInput {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: gray 1px solid;
+}
+
+.moviesSearchInput::placeholder {
+  color: black;
+}
+
+.moviesSearchInput:focus {
+  outline: none;
+}
+
+.catagoriesContainer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.form-select {
+  border-radius: 5px;
+}
+
+.form-select:focus {
+  outline: none;
+}
+
+.moviesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie {
+  width: 130px;
+  height: 200px;
+  margin: 10px;
+}
+
+.creater {
+  font-size: 14px;
+  margin: 20px 0 5px;
+}

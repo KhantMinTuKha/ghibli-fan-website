@@ -224,7 +224,7 @@ const ghibliMovies = [
     imdb: "8.6",
     genre: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster:
-      "https://i.pinimg.com/564x/7b/20/60/7b2060adf9cb7dd2613aefced8528e77.jpg",
+      "https://i.pinimg.com/564x/8e/92/2e/8e922e656e286b0baa71c2c6a681cdd4.jpg",
     otherImage: [
       "https://i.pinimg.com/564x/42/0b/c4/420bc4939f3968aa149e39b6ebbed615.jpg",
       "https://i.pinimg.com/564x/b0/7d/bd/b07dbd7b49d6f16c57bf540572d5c794.jpg",
@@ -331,7 +331,7 @@ const ghibliMovies = [
     imdb: "7.4",
     genre: ["Comedy", "Drama", "Family", "Romance"],
     poster:
-      "https://i.pinimg.com/564x/b4/7c/64/b47c64aea98f2b93c1a6fd85dc754b6e.jpg",
+      "https://i.pinimg.com/564x/2a/79/d4/2a79d4c7c193079def29bf03a363a689.jpg",
     otherImage: [
       "https://i.pinimg.com/564x/a0/81/56/a081561e54703b0bc173bc828be4f416.jpg",
       "https://i.pinimg.com/564x/39/05/66/39056665b515da73500a12ced6285abd.jpg",

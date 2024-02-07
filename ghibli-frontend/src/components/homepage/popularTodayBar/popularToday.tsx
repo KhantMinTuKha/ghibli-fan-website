@@ -24,8 +24,8 @@ const PopularToday = ({ ghibliData }: Props) => {
     };
     if (data.isPopularToday === true) {
       return (
-        <div className="posterParent">
-          <span className="poster" key={nanoid()} style={posterImage}></span>
+        <div className="posterParent" key={nanoid()}>
+          <span className="poster" style={posterImage}></span>
           <div className="posterTitle">{data.title}</div>
         </div>
       );

@@ -1,0 +1,63 @@
+.historyPageContainer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #dbf7e4;
+}
+
+.founderImageAndAboutGhibli {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+.founderImageContainer {
+  margin: 55px 20px 0;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.AboutGhibliStudioContainer {
+  font-size: 14px;
+}
+
+.aboutTitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.AboutGhibliStudioContainer > div {
+  padding-top: 10px;
+}
+
+.ghibliStudioPhotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.historyImageContainer {
+  text-align: left;
+}
+
+.HistoryImage {
+  width: 400px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.historyImageContainer > div {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+}

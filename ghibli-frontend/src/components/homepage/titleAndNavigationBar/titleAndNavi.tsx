@@ -1,14 +1,22 @@
 import "./titleAndNavi.css";
 
-const TitleAndNavigationBar = () => {
+export interface ClickHandler {
+  (event: React.MouseEvent<HTMLElement>): void;
+}
+
+interface Props {
+  handleClick: (event: React.MouseEvent<HTMLElement>) => void;
+}
+
+const TitleAndNavigationBar = ({ handleClick }: Props) => {
   return (
     <div className="titleAndNaviContainer">
-      <div className="titleContainer">Ghibli Studio</div>
+      <div className="titleContainer">Studio Ghibli</div>
       <div className="naviContainer">
-        <span>Home</span>
-        <span>History</span>
-        <span>Movies</span>
-        <span>About Me</span>
+        <span onClick={handleClick}>Home</span>
+        <span onClick={handleClick}>History</span>
+        <span onClick={handleClick}>Movies</span>
+        <span onClick={handleClick}>About Me</span>
       </div>
     </div>
   );
