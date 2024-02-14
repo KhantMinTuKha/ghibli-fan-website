@@ -47,6 +47,7 @@
 
 .form-select {
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .form-select:focus {
@@ -65,9 +66,5 @@
   width: 130px;
   height: 200px;
   margin: 10px;
-}
-
-.creater {
-  font-size: 14px;
-  margin: 20px 0 5px;
+  position: relative;
 }

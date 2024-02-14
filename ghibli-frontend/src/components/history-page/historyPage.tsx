@@ -80,6 +80,12 @@ const HistoryPage = () => {
           <div>The Ghibli Museum in Mitaka, Japan</div>
         </div>
       </div>
+      <div className="creater">
+        This website is created by{" "}
+        <a href="https://github.com/KhantMinTuKha" target="_blank">
+          KhantMinTukha
+        </a>
+      </div>
     </div>
   );
 };

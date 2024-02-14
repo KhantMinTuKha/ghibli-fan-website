@@ -10,14 +10,11 @@ import MoviesPage from "./components/movies-page/moviesPage";
 function App() {
   const [ghibliData, setGhibliData] = useState([]);
   const [naviChosenName, setNaviChosenName] = useState<string | null>("");
-  // const [isStarterPage, setIsStarterPage] = useState<boolean>(true);
-  let isStarterPage = true;
 
   const fetchData = async () => {
     const response = await fetch("http://localhost:5000/ghibliData");
     const data = await response.json();
     setGhibliData(data);
-    console.log(ghibliData);
   };
 
   useEffect(() => {

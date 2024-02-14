@@ -1,6 +1,7 @@
 import "./titleAndNavi.css";
 
 export interface ClickHandler {
+  [x: string]: any;
   (event: React.MouseEvent<HTMLElement>): void;
 }
 
