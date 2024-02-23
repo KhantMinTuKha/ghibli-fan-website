@@ -69,7 +69,7 @@ const HistoryPage = () => {
             src="https://i.pinimg.com/564x/b9/bf/95/b9bf9543f5e60973d6066e21492e7618.jpg"
             alt="Hayao Miyazaki's sketch"
           />
-          <div>Some sketches from Spirited Away Movie</div>
+          <div>Sketch from Spirited Away Movie</div>
         </div>
         <div className="historyImageContainer">
           <img

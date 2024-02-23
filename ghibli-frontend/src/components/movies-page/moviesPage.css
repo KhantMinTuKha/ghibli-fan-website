@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .moviesPageInputContainer {
@@ -12,6 +13,7 @@
   align-items: center;
   flex-direction: column;
   margin: 50px 0;
+  position: relative;
 }
 
 .GhibliLogo {
@@ -67,4 +69,11 @@
   height: 200px;
   margin: 10px;
   position: relative;
+}
+
+.createrK {
+  position: absolute;
+  bottom: -20px;
+  font-size: 14px;
+  padding: 0 0 5px;
 }

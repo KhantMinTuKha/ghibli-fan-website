@@ -6,6 +6,7 @@ import TitleAndNavigationBar, {
 } from "./components/homepage/titleAndNavigationBar/titleAndNavi";
 import HistoryPage from "./components/history-page/historyPage";
 import MoviesPage from "./components/movies-page/moviesPage";
+import AboutMe from "./components/about-me/about-me";
 
 function App() {
   const [ghibliData, setGhibliData] = useState([]);
@@ -23,7 +24,6 @@ function App() {
 
   const handleClick: ClickHandler = (event) => {
     const naviClickName = event.currentTarget.textContent;
-    console.log(naviClickName);
     setNaviChosenName(naviClickName);
   };
 
@@ -44,7 +44,7 @@ function App() {
       const styleForMovies = {
         backgroundColor: "#FFF8F4",
         width: "100%",
-        height: "100%",
+        height: "100vh",
       };
       return (
         <div style={styleForMovies}>
@@ -53,10 +53,15 @@ function App() {
         </div>
       );
     } else if (naviChosenName === "About Me") {
+      const styleForMovies = {
+        backgroundColor: "#FAECB5",
+        width: "100%",
+        height: "100vh",
+      };
       return (
-        <div>
+        <div style={styleForMovies}>
           <TitleAndNavigationBar handleClick={handleClick} />
-          <div>This is About Me Page</div>
+          <AboutMe />
         </div>
       );
     } else {

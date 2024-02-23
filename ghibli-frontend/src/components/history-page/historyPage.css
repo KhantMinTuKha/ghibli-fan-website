@@ -42,7 +42,7 @@
 
 .ghibliStudioPhotos {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -51,7 +51,6 @@
 }
 
 .HistoryImage {
-  width: 400px;
   height: 250px;
   margin-right: 20px;
 }

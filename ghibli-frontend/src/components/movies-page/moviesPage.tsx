@@ -1,9 +1,8 @@
 import { nanoid } from "nanoid";
 import { Data } from "../homepage/imageSlider/imageSlider";
 import "./moviesPage.css";
-import { ChangeEventHandler, useState } from "react";
+import { useState } from "react";
 import MoviePoster from "./movie-posters/moviePoster";
-import { ClickHandler } from "../homepage/titleAndNavigationBar/titleAndNavi";
 
 interface Props {
   ghibliData: Data[];
@@ -13,6 +12,7 @@ const MoviesPage = ({ ghibliData }: Props) => {
   const [chosenCatagoriesValue, setChosenCatagoriesValue] = useState<
     string | null
   >("");
+  const [currentSearch, setCurrentSearch] = useState<string>("");
 
   const movieSpanElements = ghibliData.map((data) => {
     return <MoviePoster data={data} key={nanoid()} />;
@@ -44,6 +44,39 @@ const MoviesPage = ({ ghibliData }: Props) => {
     setChosenCatagoriesValue(event.currentTarget.value);
   };
 
+  const filterData = () => {
+    const filteredData = ghibliData.filter((data) => {
+      return data.title.toLowerCase().includes(currentSearch);
+    });
+    return filteredData;
+  };
+
+  const fileredMoviesData = filterData();
+
+  const searchedMoviesSpanElements = fileredMoviesData.map((data) => {
+    return <MoviePoster data={data} key={nanoid()} />;
+  });
+
+  const currentCondition = () => {
+    if (chosenCatagoriesValue === "" && currentSearch.length === 0) {
+      return movieSpanElements;
+    } else if (
+      chosenCatagoriesValue === "release-date" &&
+      currentSearch.length === 0
+    ) {
+      return movieSpanElements;
+    } else if (
+      chosenCatagoriesValue === "a-to-z" &&
+      currentSearch.length === 0
+    ) {
+      return aToZSpanElements;
+    } else if (chosenCatagoriesValue === "imdb" && currentSearch.length === 0) {
+      return imdbSpanElements;
+    } else if (currentSearch.length > 0) {
+      return searchedMoviesSpanElements;
+    }
+  };
+
   return (
     <div className="moviesPageContainer">
       <div className="moviesPageInputContainer">
@@ -52,6 +85,7 @@ const MoviesPage = ({ ghibliData }: Props) => {
           type="name"
           className="moviesSearchInput"
           placeholder="Explore Movies"
+          onChange={(event) => setCurrentSearch(event.target.value)}
         ></input>
         <div className="catagoriesContainer">
           <select
@@ -65,13 +99,8 @@ const MoviesPage = ({ ghibliData }: Props) => {
           </select>
         </div>
       </div>
-      <div className="moviesContainer">
-        {chosenCatagoriesValue === "" && movieSpanElements}
-        {chosenCatagoriesValue === "release-date" && movieSpanElements}
-        {chosenCatagoriesValue === "a-to-z" && aToZSpanElements}
-        {chosenCatagoriesValue === "imdb" && imdbSpanElements}
-      </div>
-      <div className="creater">
+      <div className="moviesContainer">{currentCondition()}</div>
+      <div className="createrK">
         This website is created by
         <a href="https://github.com/KhantMinTuKha" target="_blank">
           Khant Min Thukha
