@@ -1,0 +1,44 @@
+.contactForm,
+.contactForm > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 400px;
+}
+
+.contactForm {
+  margin-bottom: 30px;
+}
+
+.formContainer {
+  padding-bottom: 10px;
+}
+
+.formContainer > label {
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formContainer > input {
+  width: 390px;
+  height: 35px;
+  outline: none;
+  padding: 0 5px;
+}
+
+.formContainer > textarea {
+  width: 390px;
+  max-width: 390px;
+  height: 150px;
+  max-height: 150px;
+  outline: none;
+  padding: 5px;
+}
+
+.sent {
+  padding: 5px 15px;
+}

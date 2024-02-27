@@ -30,7 +30,7 @@ const ImageSlider = ({ ghibliData }: Props) => {
       } else {
         setCount(count + 1);
       }
-    }, 10000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, [count]);
 

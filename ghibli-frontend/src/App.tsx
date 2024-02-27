@@ -56,7 +56,6 @@ function App() {
       const styleForMovies = {
         backgroundColor: "#FAECB5",
         width: "100%",
-        height: "100vh",
       };
       return (
         <div style={styleForMovies}>

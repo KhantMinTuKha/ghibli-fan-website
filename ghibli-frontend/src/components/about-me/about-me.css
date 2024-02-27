@@ -1,0 +1,43 @@
+.aboutMePageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  flex-direction: column;
+  width: 800px;
+}
+
+.myPhoto {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+}
+
+.aboutMe > p {
+  padding-top: 15px;
+  line-height: 150%;
+}
+
+.contactWithIcon > h3 {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.contactButtonContainer > a {
+  padding: 0 15px;
+  font-size: 25px;
+  color: green;
+}
+
+.or {
+  padding: 10px 0;
+}
