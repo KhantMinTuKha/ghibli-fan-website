@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 
 interface Props {
   ghibliData: Data[];
+  handleClicked: (isClicked: boolean) => void;
 }
 
 export interface Data {
@@ -20,7 +21,7 @@ export interface Data {
   isPopularToday: boolean;
 }
 
-const ImageSlider = ({ ghibliData }: Props) => {
+const ImageSlider = ({ ghibliData, handleClicked }: Props) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -130,6 +131,10 @@ const ImageSlider = ({ ghibliData }: Props) => {
     }
   });
 
+  const changeValue = () => {
+    handleClicked(true);
+  };
+
   return (
     <div className="imageSliderContainer">
       <div className="imageSlider" style={imageSlider}></div>
@@ -144,6 +149,7 @@ const ImageSlider = ({ ghibliData }: Props) => {
         <div className="genreContainer">{genreSpanElements}</div>
         <Button
           variant="contained"
+          onClick={changeValue}
           sx={{
             fontSize: "14px",
             fontFamily: "roboto",

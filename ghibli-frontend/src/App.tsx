@@ -7,10 +7,12 @@ import TitleAndNavigationBar, {
 import HistoryPage from "./components/history-page/historyPage";
 import MoviesPage from "./components/movies-page/moviesPage";
 import AboutMe from "./components/about-me/about-me";
+import ClickPage from "./components/click-page/clickPage";
 
 function App() {
   const [ghibliData, setGhibliData] = useState([]);
   const [naviChosenName, setNaviChosenName] = useState<string | null>("");
+  const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const fetchData = async () => {
     const response = await fetch("http://localhost:5000/ghibliData");
@@ -25,11 +27,18 @@ function App() {
   const handleClick: ClickHandler = (event) => {
     const naviClickName = event.currentTarget.textContent;
     setNaviChosenName(naviClickName);
+    console.log(naviChosenName);
   };
 
   const showPageFunction = () => {
     if (naviChosenName === "Home") {
-      return <HomePage ghibliData={ghibliData} handleClick={handleClick} />;
+      return (
+        <HomePage
+          ghibliData={ghibliData}
+          handleClick={handleClick}
+          HandleClicked={setIsClicked}
+        />
+      );
     } else if (naviChosenName === "History") {
       const styleForHistory = {
         backgroundColor: "#dbf7e4",
@@ -63,8 +72,26 @@ function App() {
           <AboutMe />
         </div>
       );
+    } else if (naviChosenName === "More Info") {
+      return (
+        <div>
+          <TitleAndNavigationBar handleClick={handleClick} />
+          <ClickPage
+            ghibliData={ghibliData}
+            isClicked={isClicked}
+            handleClicked={setIsClicked}
+            changeClick={handleClick}
+          />
+        </div>
+      );
     } else {
-      return <HomePage ghibliData={ghibliData} handleClick={handleClick} />;
+      return (
+        <HomePage
+          ghibliData={ghibliData}
+          handleClick={handleClick}
+          HandleClicked={setIsClicked}
+        />
+      );
     }
   };
 

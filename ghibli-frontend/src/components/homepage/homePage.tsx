@@ -8,13 +8,14 @@ import TitleAndNavigationBar, {
 interface Props {
   ghibliData: Data[];
   handleClick: ClickHandler;
+  HandleClicked: (isClicked: boolean) => void;
 }
 
-const HomePage = ({ ghibliData, handleClick }: Props) => {
+const HomePage = ({ ghibliData, handleClick, HandleClicked }: Props) => {
   return (
     <div>
       <TitleAndNavigationBar handleClick={handleClick} />
-      <ImageSlider ghibliData={ghibliData} />
+      <ImageSlider ghibliData={ghibliData} handleClicked={HandleClicked} />
       <PopularToday ghibliData={ghibliData} />
     </div>
   );

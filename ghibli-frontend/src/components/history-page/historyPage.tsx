@@ -58,7 +58,7 @@ const HistoryPage = () => {
         </div>
       </div>
       <hr />
-      <div className="aboutGhibliStudioFounterContainer">
+      <div className="aboutGhibliStudioFounderContainer">
         <div className="AboutGhibliStudioContainer">
           <div className="aboutTitle">
             About Hayao Miyazaki (Ghibli Founder)
@@ -95,7 +95,10 @@ const HistoryPage = () => {
             continue to shape the landscape of animation and garner him a
             revered status in the industry.
           </div>
-          <a href="https://w.wiki/3hoP" target="_blank">
+          <a
+            href="https://en.wikipedia.org/w/index.php?title=Hayao_Miyazaki&oldid=1208701164"
+            target="_blank"
+          >
             More Details
           </a>
         </div>
@@ -146,7 +149,7 @@ const HistoryPage = () => {
             Illusionist (2010) by Sylvain Chomet, Wrinkles (Arrugas, 2011) by
             Ignacio Ferreras and My Love (2006) by Aleksandr Petrov.
           </div>
-          <a href="https://w.wiki/3hoP" target="_blank">
+          <a href="https://en.wikipedia.org/wiki/Ghibli_Museum" target="_blank">
             More Details
           </a>
         </div>
